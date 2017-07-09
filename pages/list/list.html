@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-navbar hideBackButton color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>EasyLearn</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-navicon"></button>
+  <div class="h1 title">Header Buttons</div>
+  <button class="button button-clear button-positive">Edit</button>
+</div>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/letters.png">
+      </ion-thumbnail>
+      <h2>Alphabets</h2>
+      <p>Learn Letters with pronounciation</p>
+      <button ion-button clear item-right (click)="letters()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/numbers.png">
+      </ion-thumbnail>
+      <h2>Numbers</h2>
+      <p>Learn numbers with pronounciation</p>
+      <button ion-button clear item-right (click)="numbers()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/fruits.png">
+      </ion-thumbnail>
+      <h2>Fruits</h2>
+      <p>Learn different fruit names with pronounciation</p>
+      <button ion-button clear item-right (click)="fruits()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/vegetables.jpg">
+      </ion-thumbnail>
+      <h2>Vegetables</h2>
+      <p>Learn different vegetables names with pronounciation</p>
+      <button ion-button clear item-right (click)="vegetables()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/flower.png">
+      </ion-thumbnail>
+      <h2>Flowers</h2>
+      <p>Learn different flower names with pronounciation</p>
+      <button ion-button clear item-right (click)="flowers()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/bird.png">
+      </ion-thumbnail>
+      <h2>Birds</h2>
+      <p>Learn different birds names with pronounciation</p>
+      <button ion-button clear item-right (click)="birds()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/animal.jpg">
+      </ion-thumbnail>
+      <h2>Animals</h2>
+      <p>Learn different animal names with pronounciation</p>
+      <button ion-button clear item-right (click)="animals()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/video.png">
+      </ion-thumbnail>
+      <h2>Educational Videos</h2>
+      <p>Watch science and history animated videos</p>
+      <button ion-button clear item-right (click)="eduvideos()">View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/rhymes.png">
+      </ion-thumbnail>
+      <h2>Nursey Rhymes</h2>
+      <p>Watch and Learn Poems</p>
+      <button ion-button clear item-right (click)="nurrhymes()">View</button>
+    </ion-item>
+
+  </ion-list>
+  
+  <ion-item>
+    <ion-label>APP Feedback</ion-label>
+    
+    <ion-input type="text"  value="" [(ngModel)]="uname"></ion-input>
+  </ion-item>
+  
+   <button ion-button round block color="primary" icon-left (click)="nextpage()">    <ion-icon name="md-chatbubbles"></ion-icon>
+SEND FEEDBACK!</button>
+
+
+  <button ion-button large block color="dark" icon-left (click)="about()">
+    <ion-icon name="md-contact"></ion-icon>
+    About Me
+  </button>
+
+</ion-content>

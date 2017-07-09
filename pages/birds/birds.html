@@ -1,0 +1,58 @@
+<!--
+  Generated template for the Birds page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Birds</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="slide-page">
+      <button ion-button large round color="primary" (click)="begin()">Begin</button>
+      <button ion-button large round color="primary" (click)="canvass()">Drawpad</button>
+      <button ion-button large round color="primary" (click)="goToSlide()">End</button>
+      <div style="text-align: center;margin-top: 10px;margin-left: auto;margin-right: auto;letter-spacing: 1px;word-spacing: 2px;"><strong>Use DrawPad to draw and write by your own!!!</strong></div>
+
+  <ion-slides pager>
+    
+    <ion-slide>
+      <img src="http://pngimg.com/uploads/eagle/eagle_PNG1237.png" class="slide-image">
+      <h3>EAGLE</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/eagle.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="http://www.pngall.com/wp-content/uploads/2016/05/Owl-PNG-Picture.png" class="slide-image" />
+      <h3>OWL</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/owl.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/kiwi.jpg" class="slide-image" />
+      <h3>KIWI</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/kiwi.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/peacock.jpg" class="slide-image" />
+      <h3>PEACOCK</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/peacock.mp3">
+      </audio>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

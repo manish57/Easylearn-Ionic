@@ -1,0 +1,42 @@
+<head>  
+    <link href="assets/animate.css" rel="stylesheet"> <!-- Reference => https://daneden.github.io/animate.css/ -->
+</head> 
+<ion-content class="slide-pages">
+          
+  <ion-slides pager>
+    
+    <ion-slide>
+      <div class="animated pulse"> 
+      <img src="assets/logo.png" class="slide-imagess"/>
+      <h1>EASYLEARN</h1>  </div>
+      <h2 class="slide-title">Welcome to the EasyLearn</h2>
+      <p>EasyLearn app is an all-in-one app for preschool kids. It is a great and fun way to keep your kids learning outside of the classroom.</p>
+      <div class="animated bounceInLeft">
+      <ion-buttons end>
+          <button ion-button clear color="primary" (click)="skip()">Skip</button>
+      </ion-buttons></div>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/slide2.png" class="slide-imagees"/>
+    </ion-slide>
+
+
+    <ion-slide>
+      <img src="assets/slide3.png" class="slide-imagees"/>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/slide4.png" class="slide-images"/>
+      <h2 class="slide-title">Ready to Learn?</h2>
+      <div class="animated bounceInUp">
+      <button ion-button large clear icon-right color="danger" (click)="presentLoading()">
+      Continue
+      <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+      </div>
+    </ion-slide>
+
+    
+  </ion-slides>
+</ion-content>

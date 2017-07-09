@@ -1,0 +1,66 @@
+<!--
+  Generated template for the Flowers page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Flowers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="slide-page">
+      <button ion-button large round color="primary" (click)="begin()">Begin</button>
+      <button ion-button large round color="primary" (click)="canvass()">Drawpad</button>
+      <button ion-button large round color="primary" (click)="goToSlide()">End</button>
+      <div style="text-align: center;margin-top: 10px;margin-left: auto;margin-right: auto;letter-spacing: 1px;word-spacing: 2px;"><strong>Use DrawPad to draw and write by your own!!!</strong></div>
+
+  <ion-slides pager>
+    
+    <ion-slide>
+      <img src="assets/rose.png" class="slide-image">
+      <h3>ROSE</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/rose.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/lotus.jpg" class="slide-image" />
+      <h3>LOTUS</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/lotus.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/sunflower.png" class="slide-image" />
+      <h3>SUNFLOWER</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/sunflower.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/lily.png" class="slide-image" />
+      <h3>LILY</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/lily.mp3">
+      </audio>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/orchids.png" class="slide-image" />
+      <h3>ORCHID</h3>
+      <audio controls>
+        <source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/orchid.mp3">
+      </audio>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
